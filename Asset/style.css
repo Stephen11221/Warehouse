@@ -1,0 +1,214 @@
+zbody{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    height: 100vh;
+
+    ul{
+        margin-top: 150px;
+        margin-left: -40px;
+        list-style: none;
+    }
+    ul li{
+        padding: 20px;    
+        border-bottom: 1px solid white;
+    }
+    ul li a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+}    
+.header{
+    min-height: 40px;
+    padding-bottom: 5px ;
+    width: 100%;
+    background: darkred;
+  
+    button{
+        border-radius: 10px;
+        border: none;
+        height: 30px;
+        width:  120px;
+        background: rgb(30, 61, 89);
+        padding: 1px 3px;
+    }
+
+.offcanvas-header{
+    color: antiquewhite;
+    background: rgb(30, 61, 89);
+    button{
+        width: 50px;
+        border-radius: 3px;
+        color: rgb(145, 201, 250);
+        background: red;
+    }
+}
+}
+.offcanvas-body {
+    .local-time{
+        background: #5210104c;
+        padding: 10px ;
+        color: darkred;
+        button{
+            border-radius: 5px;
+            width: 50px;
+        
+        }
+    }
+    .profile{
+        margin-top: 80px;
+        text-align: center;
+ }
+ form .row{
+    margin-top: 30px;
+ }
+}
+.block-board{
+    padding: 5px 10px;
+    width: 80%;
+    color: aliceblue;
+    margin-top: 0px;
+    background: red;
+}
+.btn-search{
+    color: aliceblue;
+    background: red;
+    border: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.entry-point{
+    color: red;
+    margin-top: 140px;
+    margin-left: 200px;
+
+    .btn-red{
+        border-radius: 10px;
+        border: none;
+        color: white;
+        background: #c40909;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        height: auto;
+        /* Allow the sidebar to adapt to content */
+        ul{
+            margin-top: 80px;
+        }
+        ul li a i{
+            font-size: 1.6rem;
+            text-align: center;
+            margin-left: 10px;
+        }
+        ul li:last-child{
+            margin-top: 860px;
+        }
+        ul li a span{
+            display: none;
+        }
+
+    }
+
+    .header {
+        min-height: 50px;
+        /* Increase header height for better touch target */
+        padding-bottom: 10px;
+    }
+
+    .header button {
+        height: 35px;
+        /* Slightly larger button */
+        width: 160px;
+        /* Adjust button width */
+    }
+
+
+    .block-board {
+        width: 95%;
+        /* Full width for better responsiveness */
+        padding: 10px;
+        /* Adjust padding */
+        margin-top: 10px;
+        /* Add some space above */
+    }
+
+    .btn-search {
+        width: 40%;
+        /* Make button full-width */
+        border-radius: 10px;
+        /* Adjust border-radius for consistency */
+    }
+
+    .entry-point {
+        margin-top: 80px;
+        /* Reduce margin for smaller screens */
+        margin-left: 10px;
+        /* Adjust left margin */
+        div{
+            margin-top: 25px;
+        }
+    }
+    .sign-up{
+        width: 400px;
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+    .table-data{
+        width: 40%;
+        font-size: 0.5rem;
+    }
+}
+/*Sign up page */
+.bg-color{
+    animation:  1s hbg infinite;
+    background: linear-gradient(50deg, red ,  darkblue);
+}
+@keyframes hbg {
+    from{background: linear-gradient(50deg,
+        red,
+        darkblue);
+    }
+    to{
+        background: linear-gradient(100deg, darkblue , darkred);
+    }
+}
+.sign-up{
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 10px 20px;
+    height: 570px;
+    color: darkred;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.505);
+    border: 1px groove red;
+    p,a{
+        color: #c40909;
+        margin-top: 10px ;
+    }
+    div{
+         margin-top: 10px;
+    }
+    input{
+        background: rgba(255, 255, 255, 0.505);
+    }
+    button{
+        margin-top: 25px;
+        float: right;
+        background: darkred;
+    }
+    input{
+        border-radius: 10px;
+        border: 1px solid red;
+    }
+    .icon a{
+        color: rgba(149, 1, 1, 0.792);
+    }
+}
