@@ -1,4 +1,4 @@
-zbody{
+body{
     margin: 0;
     padding: 0;
 }
@@ -125,9 +125,16 @@ zbody{
 
     .header button {
         height: 35px;
+        padding: 10px 10px;
+        background: rebeccapurple;
+        font-size: 0.7rem;
         /* Slightly larger button */
-        width: 160px;
+        width: 100px;
         /* Adjust button width */
+    }
+    .header button:hover{
+        background: rgb(51, 14, 87);
+        color: wheat;
     }
 
 
@@ -139,7 +146,9 @@ zbody{
         margin-top: 10px;
         /* Add some space above */
     }
-
+    .table{
+        font-size: 0.7rem;
+    }
     .btn-search {
         width: 40%;
         /* Make button full-width */
@@ -210,5 +219,15 @@ zbody{
     }
     .icon a{
         color: rgba(149, 1, 1, 0.792);
+    }
+}
+.form-entry-1{
+    input{
+        width: 250px;
+        border-radius: 5px;
+        border: 1px solid red;
+    }
+    .row{
+        margin-top: 10px;
     }
 }
