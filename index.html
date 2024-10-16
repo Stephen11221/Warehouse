@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Account</title>
     <link rel="stylesheet" href="Asset/style.css">
     <link rel="stylesheet" href="Asset/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="Asset/bootstrap-5.3.3-dist/css/bootstrap.css">
 </head>
+
 <body class="bg-color">
-    <form action="dashboard.html" class="sign-up">
+    <form id="signUpForm" method="post" class="sign-up">
         <div class="row">
             <div class="col-lg-12">
-                <label for="">Name</label>
-                <input type="text" placeholder="Enter your name" class="form-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" class="form-control" required>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <label for="">Email</label>
-                <input type="text" name="" placeholder="@example " class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@example.com" class="form-control" required>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <label for="">Password</label>
-                <input type="password" placeholder="254username" class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" class="form-control" required>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <label for="">Confirm Password</label>
-                <input type="password" class="form-control">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm password" class="form-control"
+                    required>
             </div>
         </div>
-        <p><input type="checkbox" name="" id=""> I agree with term and condition </p>
-        <a href="">Forget password </a>
+        <p><input type="checkbox" id="terms" required> I agree with terms and conditions </p>
         <p class="text-center text-muted">Continue with</p>
-        <div class="d-flex justify-content-between icon ">
-            <span><a href="dashboard.html"><i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i></a></span>
-            <span><a href="dashboard.html"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></span>
-            <span><a href="dashboard.html"> <i class="fa fa-yahoo fa-2x" aria-hidden="true"></i></a></span>
-            <span><a href="dashboard.html"><i class="fa fa-thermometer-quarter fa-2x" aria-hidden="true"></i></a></span>
-        </div>
-        <button class="btn btn-danger text-light">Sign in</button>
-    </form>    
-    
+        <button type="submit" class="btn btn-danger text-light">Sign Up</button>
+    </form>
+
     <script src="Asset/App.js"></script>
-    <script src="Asset/bootstrap-5.3.3-dist/js/bootstrap.bundle.js.map"></script>
     <script src="Asset/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    
+    
 </body>
+
 </html>

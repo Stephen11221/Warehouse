@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "629a",
+      "name": "Stella Mwangi",
+      "email": "muema1476@gmail.com",
+      "password": "1111111"
+    },
+    {
+      "id": "c83e",
+      "name": "Stephen Muema Mutui ",
+      "email": "muema1476@gmail.com",
+      "password": "147612"
+    },
+    {
+      "id": "e768",
+      "name": "Stella Mwangi",
+      "email": "davidmwandikwa336@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "e6f6",
+      "name": "Stella Mwangi",
+      "email": "muema1476@gmail.com",
+      "password": "1111"
+    }
+  ]
+}

@@ -16,14 +16,16 @@
         <div class="row">
             <div class="col-lg-3 col-3 bg-danger text-light sidebar">
                 <ul>
-                    <li><a href="dashboard.html"><i class="fa fa-dashboard" aria-hidden="true"></i> <span> Dashboard</span> </a></li>
-                    <li><a href="worker.html"><i class="fa fa-users" aria-hidden="true"></i> <span>worker on-shift
-                            </span></a></li>
-                    <li><a href="listitem.html"><i class="fa fa-folder-o" aria-hidden="true"></i><span>Food
-                                item</span></a></li>
-                    <li><a href="shift_worker.html"><i class="bi bi-person-workspace" ></i><span>Next shift worker </span></a></li>
+                    <li><a href="dashboard.html"><i class="fa fa-dashboard" aria-hidden="true"></i> <span> Dashboard</span> </a>
+                    </li>
+                    <li><a href="worker.html"><i class="fa fa-users" aria-hidden="true"></i> <span>worker on-shift </span></a></li>
+                    <li><a href="listitem.html"><i class="fa fa-folder-o" aria-hidden="true"></i><span>Food item</span></a></li>
+                    <li><a href="food-sold.html"><i class="fa fa-stack-overflow" aria-hidden="true"></i><span>Food-sold</span></a>
+                    </li>
+                    <li><a href="shift_worker.html"><span>Old employee </span></a></li>
                     <li><a href=""> <i class="fa fa-gears" aria-hidden="true"></i> Setting</a></li>
                 </ul>
+            
             </div>
             <div class="col-lg-9 col-9">
                 <!-- Modal trigger button -->
@@ -39,7 +41,7 @@
                 <!-- Modal Body -->
                 <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
                 <div
-                    class="modal fade"
+                    class="modal fade  modal-web"
                     id="modalId"
                     tabindex="-1"
                     data-bs-backdrop="static"
@@ -50,7 +52,7 @@
                     aria-hidden="true"
                 >
                     <div
-                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg "
+                        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm "
                         role="document"
                     >
                         <div class="modal-content">
@@ -66,8 +68,37 @@
                                 ></button>
                             </div>
                             <div class="modal-body">
-                                <form action="listitem.html">
-                                    
+                                <form action="listitem.html " class="form-entry-1">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label for="">Department</label>
+                                            <input type="text" placeholder="Department " class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label for="">Warehouse</label>
+                                            <input type="text" placeholder="Warehouse" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label for="">DueDate</label>
+                                            <input type="date" class="form-control" name="" id="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label for="">Quantity</label>
+                                            <input type="text" class="form-control" placeholder="Quantity">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label for="">Item </label>
+                                            <input type="text" class="form-control" placeholder="Item " name="" id="">
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                             <div class="modal-footer">

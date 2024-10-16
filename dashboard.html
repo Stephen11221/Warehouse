@@ -17,8 +17,10 @@
                     <li><a href="dashboard.html"><i class="fa fa-dashboard" aria-hidden="true"></i> <span> Dashboard</span> </a></li>
                     <li><a href="worker.html"><i class="fa fa-users" aria-hidden="true"></i>  <span>worker on-shift </span></a></li>
                     <li><a href="listitem.html"><i class="fa fa-folder-o" aria-hidden="true"></i><span>Food item</span></a></li>
-                    <li><a href="shift_worker.html"><i class="bi bi-person-workspace" ></i><span>Next shift worker </span></a></li>
+                    <li><a href="food-sold.html"><i class="fa fa-stack-overflow" aria-hidden="true"></i><span>Food-sold</span></a></li>
+                    <li><a href="shift_worker.html"><i class="bi bi-person-workspace" ></i><span>Old employee </span></a></li>
                     <li><a href=""> <i class="fa fa-gears" aria-hidden="true"></i> Setting</a></li>
+                
                 </ul>
 
             </div>
@@ -136,7 +138,7 @@
                 <form action="" class="entry-point" method="post">
                     <div class="row">
                         <div class="col-lg-6 d-flex">
-                            <label for="warehouse">Warehouse</label>
+                            <label for="warehouse">Name </label>
                             <input type="text" placeholder="@qyu" class="form-control mx-2" name="warehouse" id="warehouse">
                         </div>
                         <div class="col-lg-6 d-flex">
@@ -146,17 +148,17 @@
                     </div>
                     <div class="row my-4">
                         <div class="col-lg-6 d-flex">
-                            <label for="dueDate">Due Date</label>
-                            <input type="date" class="form-control mx-2" name="dueDate" id="dueDate">
+                            <label for="dueDate">Phone number</label>
+                            <input type="number" class="form-control mx-2" name="dueDate" id="dueDate">
                         </div>
                         <div class="col-lg-6 d-flex">
-                            <label for="quantity">Quantity</label>
-                            <input type="number" class="form-control mx-2" name="quantity" id="quantity">
+                            <label for="quantity">Email</label>
+                            <input type="email" class="form-control mx-2" name="quantity" id="quantity">
                         </div>
                     </div>
                     <div class="row my-3">
                         <div class="col-lg-12 d-flex">
-                            <label for="item">Item</label>
+                            <label for="item">Insurrance card number </label>
                             <input type="text" name="item" class="form-control mx-2" id="item">
                         </div>
                     </div>
@@ -168,52 +170,27 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-4 d-flex">
-                            <label for="sectionName">Section Name</label>
+                            <label for="sectionName">Gender</label>
                             <select name="sectionName" id="sectionName" class="form-control">
-                                <option value="">Section Q & D</option>
-                                <option value="">Section C</option>
-                                <option value="">Section A&B</option>
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                                <option value="">Both </option>
+                                <option value="">Rather not say</option>
                             </select>
                         </div>
                         <div class="col-lg-4 d-flex">
-                            <label for="costCenter">Cost Center</label>
-                            <div class="dropdown open mx-2">
-                                <a class="btn btn-light dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Cost Selection
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="triggerId">
-                                    <a class="dropdown-item" href="#">Cost Center 1</a>
-                                    <a class="dropdown-item" href="#">Cost Center 2</a>
-                                </div>
-                            </div>
+                            <label for="costCenter">Department Code</label>
+                            <input type="number"  class="form-control " placeholder="1231Staffcode" name="" id="">
                         </div>
-                        <div class="col-lg-3 d-flex">
-                            <button class="btn btn-danger text-light"><i class="fa fa-plus" aria-hidden="true"></i> ADD</button>
+                        <div class="col-lg-3">
+                            <label for="">Upload CV <i class="fa fa-upload text-dark" ></i></label>
+                            <input type="file" name="" class="form-control" id="">
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-success btn-lg float-end">
-                        Submit
+                    <button type="submit" class="btn btn-success btn-lg mt-3 float-end">
+                        Employ new staff
                     </button>
                     
-                    <!-- Modal Body -->
-                    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modalTitleId">You have recorded data successfully</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container-fluid text-center">
-                                        <i class="fa fa-thumbs-o-up fa-4x" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </form>
                         
             </div>
